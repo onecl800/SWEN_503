@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Blockly Demo: Headless</title>
+  <script src="../../blockly_uncompressed.js"></script>
+  <script src="../../blocks_compressed.js"></script>
+  <script src="../../kiwifroot_compressed.js"></script>
+  <script src="../../msg/js/en.js"></script>
+  <style>
+    body {
+      background-color: #fff;
+      font-family: sans-serif;
+    }
+    h1 {
+      font-weight: normal;
+      font-size: 140%;
+    }
+    td {
+      vertical-align: top;
+    }
+    textarea {
+      width: 100%;
+      height: 20em;
+    }
+  </style>
+</head>
+<body onload="loadOutput()">
+  <h1><a href="https://developers.google.com/blockly/">Blockly</a> &gt;
+    <a href="../index.html">Demos</a> &gt; Headless</h1>
+
+  <p>This is a simple demo of generating Kiwifroot code from JSON with no graphics.
+  This might be useful for server-side code generation.</p>
+  <p>This demo will attempt to load json from local storage, so you can also have
+    the playground open -> edit a script -> export it to json -> then refresh this page
+    and run the generation to check the headless demo is still functional. For more info, 
+    check the read me.</p>
+
+  <table style="width: 100%">
+    <tr>
+      <td style="width:50%">
+        <textarea id="text_input">
+        </textarea>
+      </td>
+      <td>
+      </td>
+      <td style="width:50%">
+        <textarea id="code_output" readonly></textarea>
+      </td>
+    </tr>
+  </table>
+
+  <div style="text-align: center">
+    <button onclick="generateFromXml()">Generate from XML &#10548;</button>
+    <button onclick="generateFromJson()">Generate from JSON &#10548;</button>
+  </div>
+
+  <script>
+    function loadOutput(){
+      document.getElementById('text_input').value = window.localStorage['blocklyOutput'];
+    }
+
+    function generateFromXml() {
+      // Parse the XML into a tree.
+      var xmlText = document.getElementById('text_input').value;
+      var xml;
+      try {
+        xml = Blockly.Xml.textToDom(xmlText);
+      } catch (e) {
+        alert(e);
+        return;
+      }
+      // Create a headless workspace.
+      var workspace = new Blockly.Workspace();
+      Blockly.Xml.domToWorkspace(workspace, xml);
+      var code = Blockly.Kiwifroot.workspaceToCode(workspace);
+      document.getElementById('code_output').value = code;
+    }
+
+    function generateFromJson() {
+      // Parse the XML into a tree.
+      var jsonText = document.getElementById('text_input').value;
+      try {
+        var json = JSON.parse(jsonText);
+      } catch (e) {
+        alert(e);
+        return;
+      }
+      // Create a headless workspace.
+      var workspace = new Blockly.Workspace();
+      Blockly.Json.objectToWorkspace(workspace, json);
+      var code = Blockly.Kiwifroot.workspaceToCode(workspace);
+      document.getElementById('code_output').value = code;
+    }
+  </script>
+
+</body>
+</html>
