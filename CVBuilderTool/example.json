@@ -1,0 +1,33 @@
+{
+  "firstName":"eg. Veronica",
+  "lastName":"eg. Mars",
+  "age":"eg. 16",
+  "languages":"eg. Spanish",
+  "school":"eg. Neptune High",
+  "phoneNum":"eg. 027 1234567",
+  "email":"eg. veronica.mars@gmail.com",
+  "suburb":"eg. Balboa County",
+  "city":"eg. Neptune",
+
+  "statement":"eg. During my time at Neptune High I have quickly become a pillar of the community. My skills in problem solving, work ethic, and my strong moral compass have often been applauded. My ability to self-start and my analytical stills have always helped me cut to the core of any problem that I am presented with. My goals for the future involve attending university and starting my own business.",
+
+  "company":"eg. Mars Investigations Ltd.",
+  "jobTitle":"eg. Secretary",
+  "jobRole":"eg. First point of contact for clients.  Key office administrator.  Largely self-managed.",
+
+  "volunteerOrganisation":"eg. Neptune Sheriff's Department",
+  "volunteerTitle":"eg. File and evidence relocation clerk",
+  "volunteerRole":"eg. Ensured that evidence and files were in the location where it would provide the most good \n Brought security issues to the attention of the department",
+
+  "subject":"eg. English/Statistics/Chemistry etc.",
+
+  "award":"eg. The Lily Kane College Scholarship",
+  "extraCurrActivity": "eg. Neptune High: PCH/Student body meeting facilitator \n Neptune Pet Owner's Association: Dog finder \n Netune High Pep Squad: Cheerleader",
+
+  "refName":"eg. Mr. Van Clemmons",
+  "refPos":"eg. Vice Principal: Neptune High",
+  "refEmail":"eg. v.clemmons@neptunehigh.com",
+  "refNum":"eg. (12) 555-1234"
+
+
+}

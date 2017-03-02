@@ -1,0 +1,108 @@
+<!--PHP code for loading values when called via load button on front page-->
+<?php
+$createString = 'Create New'; //string to match button text in index.php
+$loadString = 'Edit CV'; //string to match button text in index.php
+$loadData = false;
+
+//loading tooltips.json
+$tooltips_json = json_decode(file_get_contents('tooltips.json'), true); //loading tool tips from json file
+
+$id = $_POST['id']; //global $id variable
+
+//Variables that are strings
+$firstName = $lastName = $suburb = $city = $school = ''; //global single input field variables
+$license = ''; //global single input field variables
+
+//Variables that are numbers
+$age = $phoneNum = ''; //global single input field variables
+
+// Variables that are a TextArea
+$statement = ''; //global single input field variables
+
+// Variables that are an email address
+$mail = ''; //global single input field variables
+
+// Variables that have a default value set
+
+$country = 'New Zealand'; //default country
+
+if ($_POST['submit'] == $loadString) {
+    //loading of global single input variables if user use edit cv button
+    $loadData = true;
+    $filename = 'users/'.$id.'/'.$id.'.json';
+    $file = file_get_contents($filename);
+    $user_json = json_decode($file, true); //loading ID.json file as a variable
+
+    $firstName = $user_json['firstName'];
+    $lastName = $user_json['lastName'];
+    $suburb = $user_json['suburb'];
+    $city = $user_json['city'];
+    $country = $user_json['country'];
+    $school = $user_json['school'];
+    $age = $user_json['age'];
+    $phoneNum = $user_json['phoneNum'];
+    $statement = $user_json['statement'];
+    $mail = $user_json['mail'];
+    $license = $user_json['license'];
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CV-Tool</title>
+
+    <!-- Bootstrap -->
+    <link href="./bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="./bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet"/>
+    <link href="create_cv.css" rel="stylesheet"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="./bootstrap-3.3.7/dist/css/bootstrap.min.js"></script>
+    <script src="./bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <![endif]-->
+
+    <!--                        CSS internal-->
+</head>
+<body>
+<!-- <h1 id="title" >Welcome to the awesome CV Builder!</h1> -->
+<div class="container-fluid">
+    <form id="form" name="myForm" onsubmit="return validateForm(); "action="save_createPDF.php" method="post">
+
+        <div class="col-sm-6" style="height:130px;">
+            <div class="form-group">
+                <div class="input-group date" id="month_year_picker">
+                    <input type="text" name="" class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar">
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+<script src="./jquery-3.1.1/jquery-3.1.1.js"></script>
+<script src="./moment/moment.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="./bootstrap-3.3.7/js/transition.js"></script>
+<script src="./bootstrap-3.3.7/js/collapse.js"></script>
+<script src="./bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script src="create_cv.js"></script>
+<script src="button_function.js"></script>
+<script src="carousel.js"></script>
+<script src="datepicker.js"></script>
+</div>
+</body>
+</html>

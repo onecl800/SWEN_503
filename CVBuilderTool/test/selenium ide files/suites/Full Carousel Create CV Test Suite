@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="../TestUserLogin">TestUserLogin</a></td></tr>
+<tr><td><a href="../CreateCVBlankFields">CreateCVBlankFields</a></td></tr>
+
+<tr><td><a href="../type_select_assert field tests/firstNameTest">firstNameTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/lastNameTest">lastNameTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/ageTest">ageTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/language0Test">language0Test</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/schoolTest">schoolTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/licenseTest">licenseTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/phoneNumTest">phoneNumTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/mailTest">mailTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/suburbTest">suburbTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/cityTest">cityTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/countryTest">countryTest</a></td></tr>
+
+<tr><td><a href="../type_select_assert field tests/statementTest">statementTest</a></td></tr>
+
+<tr><td><a href="../type_select_assert field tests/employment0startDateTest">employment0startDateTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/employment0endDateTest">employment0endDateTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/employment0jobCompanyTest">employment0jobCompanyTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/employment0titleTest">employment0titleTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/employment0jobDescriptionTest">employment0jobDescriptionTest</a></td></tr>
+
+<tr><td><a href="../type_select_assert field tests/volunteer0volCompanyTest">volunteer0volCompanyTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/volunteer0volStartDateTest">volunteer0volStartDateTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/volunteer0volEndDateTest">volunteer0volEndDateTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/volunteer0volDescriptionTest">volunteer0volDescriptionTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/volunteer0volTitleTest">volunteer0volTitleTest</a></td></tr>
+
+<tr><td><a href="../type_select_assert field tests/education0schoolYearTest">education0schoolYearTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/education0schoolYearGradeTest">education0schoolYearGradeTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/education0AllSubjectsTest">education0AllSubjectsTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/education0AllSubjectGradesTest">education0AllSubjectGradesTest </a></td></tr>
+
+
+
+<tr><td><a href="../type_select_assert field tests/achievement0awardTest">achievement0awardTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/achievement0awardYearTest">achievement0awardYearTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/extracurricular0activityTest">extracurricular0activityTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/extracurricular0extracurYearTest">extracurricular0extracurYearTest</a></td></tr>
+
+<tr><td><a href="../type_select_assert field tests/referees0refNameTest">referees0refNameTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/referees0refPositionTest">referees0refPositionTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/referees0refEmailTest">referees0refEmailTest</a></td></tr>
+<tr><td><a href="../type_select_assert field tests/referees0refNumTest">referees0refNumTest</a></td></tr>
+</tbody></table>
+</body>
+</html>

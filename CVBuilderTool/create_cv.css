@@ -1,0 +1,418 @@
+/*Force vertical scroll bar to prevent centering jumps*/
+html {
+    overflow-y: scroll;
+}
+
+
+/*INDEX.PHP STYLING RULES BELOW THIS*/
+/*CSS styling for the index.php page:*/
+
+/*Index.php -> Style for page*/
+#student_word {
+    width: 24vh;
+    /*    height: 6vh;*/
+}
+
+/*Index.php -> This div encompasses the buttons and content in the middle of the page*/
+#middle_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*    padding-left: 40%;*/
+}
+
+/*Index.php -> Buttons on the load test id and splash page*/
+#buttons    {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*    padding-top: 20px;*/
+}
+
+/*Index.php -> */
+#word_content_area {
+    width: 48vh;
+}
+
+/*CREATE_CV.PHP STYLING RULES BELOW THIS*/
+
+/*Style the grid elements first*/
+.container-fluid {
+    height: 100%;
+}
+
+/*Set height of top navigatino bar to 7nvertical */
+#top_nav_bar {
+    height: 7vh;
+    color: white;
+    background-color: black;
+}
+
+#top_nav_bar_left_area {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+/*Style the top left title*/
+#top_nav_bar_left_title {
+    font-size: 20pt;
+    margin: auto;
+}
+
+/*CSS for the middle area of buttons*/
+
+#top_nav_bar_middle_area {
+    display: flex;
+    align-items: stretch;
+    background-color: white;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*Style the nav bar buttons*/
+#top_nav_bar_middle_area button {
+    /*height: 5vh;*/
+    /*width: 12.5%;*/
+    width: 100%;
+    border: none;
+    outline: none;
+    /*font-size: 14pt;*/
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    flex-grow: inherit;
+}
+
+/*#top_nav_bar_start_middle   {
+    width: 1% 2;
+    background-color: red;
+}*/
+
+#details_button {
+    /*margin-left: auto;*/
+}
+
+#top_nav_bar_right_area {
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+}
+
+/*CSS for the Finish button in the top right corner of the UI*/
+#finish_button_top_corner {
+    height: 100%;
+    background-color: black;
+    padding-left: 10%;
+    text-align: left;
+    font-size: 20pt;
+    border: none;
+    outline: none;
+    flex: auto;
+}
+
+.top_nav_bar_button_inactive {
+    background-color: black;
+}
+
+.top_nav_bar_button_active {
+    background-color: hsla(204, 100%, 48%, 0.75);
+}
+
+/*CSS for top indictator boxes*/
+.indicator_box_active {
+
+    /*    align: center;*/
+    /*    padding: -2px;*/
+    border-left: 2px solid white;
+    /*background-color: hsla(204, 100%, 48%, 0.75);*/
+}
+
+.indicator_box_inactive {
+
+    /*    align: center;*/
+
+    /*    padding: -2px;*/
+    border-left: 2px solid white;
+    background-color: black;
+}
+
+/*CSS for middle carousel area*/
+#carousel_area {
+    height: 93vh;
+
+}
+
+/*Bototm nav bar is temporarily disabled*/
+/*CSS for bottom navigation bar*/
+/*#bottom_nav_bar    {*/
+/*height: 6vh;*/
+/*color: red;*/
+/*}*/
+
+/*Style the bottom nav bar divs*/
+/*#bottom_nav_bar div{*/
+/*height: 100%;*/
+/*background-color: hsla(204, 100%, 48%, 0.75);*/
+/*background-color: black;*/
+/*}*/
+
+/*  Remove the carousel shading under the arrows*/
+.carousel-control.right, .carousel-control.left {
+    /*background-color: black;*/
+    /*background-image:none;*/
+    /*    border: 3px solid white;*/
+    /*    Change the width of the controls*/
+    /*width: 8%;*/
+    /*display: none;*/
+    visibility: hidden;
+}
+
+/*  Initially hide the left arrow element */
+.carousel-control.left  {
+    display: none;
+}
+
+/*Move the carousel indicator circles downwards*/
+.carousel-indicators {
+    margin-bottom: -15px;
+}
+
+
+/*Set the colour of the main page, enter_test_id.php and index.php*/
+#wizard_pages, .main_area  {
+    /*    Set the background color for the carousel area*/
+    background-color: hsla(204, 100%, 48%, 0.75);
+    /*background-color: white;*/
+}
+
+.wizard_content   {
+    /*    background-color: hsla(204, 100%, 48%, 0.75);*/
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    min-height: 93vh;
+    /*margin-top: 0%;*/
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+/*Setting up the flex box elements that take up the page*/
+/**/
+.form_fields {
+    display: flex;
+    flex-flow: column nowrap;
+    /*flex: 100%;*/
+    /*min-height: 94vh;*/
+    /*margin-left: 10%;*/
+}
+
+/*The structure of the content on each page of the carousel is split into */
+/*three columns, each one is 21% wide. THey are labelled, "left", "middle", "right" */
+.form_element_left {
+    width: 30%;
+    /*text-align: top;*/
+    align-self: flex-start;
+    /*    position: right;*/
+}
+
+.form_element_middle {
+    width: 30%;
+    /*text-align: top;*/
+    align-items: center;
+    /*    padding-left: 21%;*/
+    /*    position: right;*/
+}
+
+.form_element_right {
+    width: 30%;
+    /*text-align: top;*/
+    /*margin-left: 42%;*/
+    align-self: flex-end;
+    /*padding-left: 21%;*/
+    /*position: right;*/
+}
+
+/*This is to make page 6 have three columns*/
+.form_line_div {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+.high_text_field {
+    vertical-align: top;
+}
+
+/*Personal statement text field*/
+#personal_statement_text_field {
+    width: 60%;
+}
+
+/* This is the div that holds the buttons at the bottom of the screen*/
+.carousel_bottom_nav_bar {
+    /*Make the bottom nav bar stick to the bottom*/
+    margin-top: auto;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 6vh;
+    /*background-color: black;*/
+}
+
+#left_button, #middle_button, #right_button {
+    /*height: 50px;*/
+    /*width: 200px;*/
+    height: 6vh;
+    width: 24vh;
+    color: white;
+    border-width: 2px;
+    border-color: white;
+    /*#64c864;*/
+    /*background-color: #64c864;*/
+    border-radius: 8px;
+    font-weight: bold;
+    /*border: none;*/
+    background-color: black;
+
+}
+
+#left_button {
+    align-self: flex-start;
+    /*margin-left: 8%;*/
+}
+
+#middle_button {
+    align-items: center;
+}
+
+#right_button {
+    align-self: flex-end;
+    /*margin-right: 8%;*/
+}
+
+/*CSS for making the text areas only be resizeable in the vertical direction*/
+
+textarea {
+    resize: vertical;
+    max-width: 100%;
+}
+
+/* CSS for form fields*/
+#req:after {
+    content: '*';
+    color: red;
+}
+
+/*CSS for personal qualitites*/
+input:required {
+    box-shadow: none;
+}
+
+/*CSS add or remove buttons*/
+.addOrRemoveButton {
+    width: 30px;
+}
+
+input[type="checkbox"] {
+  transform:scale(1.5, 1.5);
+}
+
+/*Carousel 6 CSS */
+#quality_text {
+    padding-left: 20px;
+}
+
+/*Style the name of each attribute*/
+.attribute p {
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.attribute_top  {
+    width: 100%;
+
+}
+
+.attribute_bottom   {
+    width: 100%;
+}
+
+/*Style the description text of each quality*/
+
+.attribute_bottom div {
+    width: 100%;
+    margin: 20px;
+}
+
+
+
+.attribute p {
+    font-weight: bold;
+    /*font-size: 20pt;*/
+    padding: 0;
+    margin: 0;
+}
+
+/*Carousel 6 CSS*/
+
+
+/*CSS code to make the div a flexbox*/
+#personal_attributes_container   {
+    display: flex;
+    flex-flow: row wrap;
+    /*align-items: stretch;*/
+}
+
+.personal_attribute  {
+
+    width: 23%;
+    border: 2px solid black;
+    border-radius: 10px;
+    /*padding: 2px;*/
+    margin: 2px;
+    color: black;
+    background-color: hsla(204, 100%, 48%, 0.75);
+    align-items: flex-start;
+    flex-flow: column nowrap;
+}
+
+/*This CSS makes the color of the attribute panel orange when the jQuery addes the*/
+.personal_attribute.color_toggled_on  {
+    background-color: hsla(18, 100%, 56%, 1);
+}
+
+.personal_attribute.color_toggled_grey  {
+    background-color: hsla(96, 0%, 67%, 1);
+}
+
+/*CSS for number fields*/
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+/*CSS for add more and remove buttons on pages where they exist*/
+
+.add_or_remove_fields_button  {
+    color: white;
+    border-width: 1px;
+    border-color: white;
+    /*#64c864;*/
+    /*background-color: #64c864;*/
+    border-radius: 4px;
+    /*font-weight: bold;*/
+    /*border: none;*/
+    background-color: black;
+}

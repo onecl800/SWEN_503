@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost/home/enter_test_id.php" />
+<title>1</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">1</td></tr>
+</thead><tbody>
+<tr>
+	<td>type</td>
+	<td>name=education[0][subjects][0][subject]</td>
+	<td>Science</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>name=education[0][subjects][0][subject]</td>
+	<td>Science</td>
+</tr>
+
+<tr>
+	<td>type</td>
+	<td>name=education[0][subjects][1][subject]</td>
+	<td>Science</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>name=education[0][subjects][1][subject]</td>
+	<td>Science</td>
+</tr>
+
+<tr>
+	<td>type</td>
+	<td>name=education[0][subjects][2][subject]</td>
+	<td>Science</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>name=education[0][subjects][2][subject]</td>
+	<td>Science</td>
+</tr>
+
+<tr>
+	<td>type</td>
+	<td>name=education[0][subjects][3][subject]</td>
+	<td>Science</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>name=education[0][subjects][3][subject]</td>
+	<td>Science</td>
+</tr>
+
+<tr>
+	<td>type</td>
+	<td>name=education[0][subjects][4][subject]</td>
+	<td>Science</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>name=education[0][subjects][4][subject]</td>
+	<td>Science</td>
+</tr>
+
+<tr>
+	<td>type</td>
+	<td>name=education[0][subjects][5][subject]</td>
+	<td>Science</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>name=education[0][subjects][5][subject]</td>
+	<td>Science</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
